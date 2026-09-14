@@ -1,0 +1,19 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+
+# Environment variables
+.env
+.env.*
+
+# Firebase credentials
+*serviceAccount*.json
+*firebase-adminsdk*.json
+
+# Node modules
+node_modules/
+.next/
+
+# IDE
+.vscode/

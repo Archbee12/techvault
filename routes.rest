@@ -1,0 +1,63 @@
+### Get all skills
+GET http://127.0.0.1:5000/skills
+
+### Get a specific skill by ID
+GET http://127.0.0.1:5000/skills/eJtMGjPiHKggvDPMFxjU
+
+### Create a new skill
+POST http://127.0.0.1:5000/skills
+Content-Type: application/json
+
+{
+  "name": "CRUD Test Skill",
+  "category": "Software Development",
+  "description": "Temporary skill used to verify the complete CRUD workflow.",
+  "level": "Beginner"
+}
+
+### Update a skill
+PUT http://127.0.0.1:5000/skills/eJtMGjPiHKggvDPMFxjU
+Content-Type: application/json
+
+{
+  "level": "Beginner"
+}
+
+### Delete a skill
+DELETE http://127.0.0.1:5000/skills/eJtMGjPiHKggvDPMFxjU
+
+
+# --------- Learning Goals API ---------
+
+### Get all learning goals
+GET http://127.0.0.1:5000/learning_goals
+
+### Get a specific learning goal by ID
+GET http://127.0.0.1:5000/learning_goals/POkCUMJsp0JzCgWKIkbU
+
+### Create a new learning goal
+POST http://127.0.0.1:5000/learning_goals
+Content-Type: application/json
+
+{
+  "skill_id": "cascade-test-skill",
+  "title": "Test Cascade Deletion",
+  "description": "Temporary learning goal used to test related document deletion.",
+  "level": "Beginner",
+  "completed": false
+}
+
+### Update an existing learning goal
+PUT http://127.0.0.1:5000/learning_goals/POkCUMJsp0JzCgWKIkbU
+Content-Type: application/json
+
+{
+  "skill_id": "python",
+  "title": "Practice Python Functions",
+  "description": "Write functions using parameters and return values.",
+  "level": "Intermediate",
+  "completed": true
+}
+
+### Delete existing learning goal
+DELETE http://127.0.0.1:5000/learning_goals/DgYrH3HOLeoP8fcH2Hgz
