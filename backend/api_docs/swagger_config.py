@@ -197,12 +197,12 @@ swagger_template = {
                 "responses": {
                     "200": {
                         "description": "Skills retrieved successfully.",
-                        "schema": {
-                            "type": "array",
-                            "items": {
-                                "$ref": "#/definitions/Skill"
-                            }
-                        }
+                        # "schema": {
+                        #     "type": "array",
+                        #     "items": {
+                        #         "$ref": "#/definitions/Skill"
+                        #     }
+                        # }
                     }
                 }
             },
@@ -259,9 +259,9 @@ swagger_template = {
                 "responses": {
                     "200": {
                         "description": "Skill retrieved successfully.",
-                        "schema": {
-                            "$ref": "#/definitions/Skill"
-                        }
+                        # "schema": {
+                        #     "$ref": "#/definitions/Skill"
+                        # }
                     },
                     "404": {
                         "description": "Skill not found."

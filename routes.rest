@@ -2,29 +2,32 @@
 GET http://127.0.0.1:5000/skills
 
 ### Get a specific skill by ID
-GET http://127.0.0.1:5000/skills/eJtMGjPiHKggvDPMFxjU
+GET http://127.0.0.1:5000/skills/crud-test-skill
 
 ### Create a new skill
 POST http://127.0.0.1:5000/skills
 Content-Type: application/json
 
 {
-  "name": "CRUD Test Skill",
+  "name": "CRUD Skill",
   "category": "Software Development",
   "description": "Temporary skill used to verify the complete CRUD workflow.",
   "level": "Beginner"
 }
 
 ### Update a skill
-PUT http://127.0.0.1:5000/skills/eJtMGjPiHKggvDPMFxjU
+PUT http://127.0.0.1:5000/skills/crud-test-skill
 Content-Type: application/json
 
 {
-  "level": "Beginner"
+  "category": "DevOps",
+  "description": "Temporary skill used to verify the complete CRUD workflow.",
+  "level": "Beginner",
+  "name": "CRUD Test Skill"
 }
 
 ### Delete a skill
-DELETE http://127.0.0.1:5000/skills/eJtMGjPiHKggvDPMFxjU
+DELETE http://127.0.0.1:5000/skills/crud-skill
 
 
 # --------- Learning Goals API ---------
@@ -33,7 +36,7 @@ DELETE http://127.0.0.1:5000/skills/eJtMGjPiHKggvDPMFxjU
 GET http://127.0.0.1:5000/learning_goals
 
 ### Get a specific learning goal by ID
-GET http://127.0.0.1:5000/learning_goals/POkCUMJsp0JzCgWKIkbU
+GET http://127.0.0.1:5000/learning_goals/javascript
 
 ### Create a new learning goal
 POST http://127.0.0.1:5000/learning_goals
