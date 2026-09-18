@@ -1,16 +1,41 @@
 # Overview
-TechVault Skill Tracker is a cloud-based skill tracking application designed to help software development students organize the technical skills they are learning and track their progress through individual learning goals. The application uses Python, Flask, and Firebase Firestore to manage a collection of technical skills and their related learning goals. Users can create, view, update, and delete skills and learning goals, while each learning goal is connected to the skill it belongs to.
+TechVault Skill Tracker is a cloud-based application I developed to strengthen my skills in backend development, REST APIs, and cloud database integration. The application provides a structured way to organize technical skills and break them down into smaller learning goals that can be tracked as completed or incomplete.
 
-The project demonstrates the use of a cloud database and a RESTful API to manage related data. It includes data validation, CRUD operations, related collections, and cascade deletion of learning goals when their associated skill is removed. The API is also documented using Swagger/OpenAPI documentation to make the available endpoints easier to understand and test.
+The software is built with Python and Flask and integrates with Firebase Firestore as its cloud database. The application provides REST API endpoints that allow users to create, retrieve, update, and delete skills and learning goals. Each learning goal is associated with a skill, allowing related data to be managed between the two Firestore collections. The API can be accessed and tested through the documented endpoints using tools such as the VS Code REST Client and Swagger UI.
 
 # Purpose
-The purpose of creating TechVault Skill Tracker is to provide a structured way for software development students to manage what they are learning instead of treating their learning journey as one large task. By breaking technical skills into smaller learning goals, students can focus on gradual progress and recognize the small improvements they make along the way.
-
-This project also serves as a practical learning experience for me as a software development student. Through building TechVault, I am applying what I have learned about Python, Flask, cloud databases, Firebase Firestore, REST APIs, data validation, API documentation, and Git/GitHub while practicing the principle of continuous improvement through small, manageable steps.
+The purpose of writing this software was to gain practical experience working with a cloud database while improving my ability to design and build backend applications. I also wanted to apply a continuous-learning approach by breaking a larger software-development goal into smaller features, such as establishing the database connection, creating CRUD operations, validating data, connecting related collections, and documenting the API.
 
 Youtube Video: 
 
 [Software Demo Video](http://youtube.link.goes.here)
+
+# Cloud Database
+
+TechVault uses Firebase Cloud Firestore, a cloud-based NoSQL database. Firestore stores the application's data as collections containing individual documents, allowing the Flask backend to create, retrieve, update, and delete data in the cloud.
+
+## The database contains two related collections:
+
+### skills
+
+The skills collection stores the technical skills available in the application. Each skill contains:
+
+name – Name of the technical skill
+category – Category of the skill
+description – Description of the skill
+level – Beginner, Intermediate, or Advanced
+
+### learning_goals
+
+The learning_goals collection stores individual learning goals associated with a skill. Each learning goal contains:
+
+skill_id – Identifies the skill associated with the goal
+title – Name of the learning goal
+description – Description of what should be learned
+level – Beginner, Intermediate, or Advanced
+completed – Indicates whether the learning goal has been completed
+
+The relationship between the collections is one-to-many, where one skill can have multiple learning goals. When a skill is deleted through the API, its associated learning goals are also deleted.
 
 # Development Environment
 
