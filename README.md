@@ -20,20 +20,20 @@ TechVault uses Firebase Cloud Firestore, a cloud-based NoSQL database. Firestore
 
 The skills collection stores the technical skills available in the application. Each skill contains:
 
-name – Name of the technical skill
-category – Category of the skill
-description – Description of the skill
-level – Beginner, Intermediate, or Advanced
+- **name** – Name of the technical skill
+- **category** – Category of the skill
+- **description** – Description of the skill
+- **level** – Beginner, Intermediate, or Advanced
 
 ### learning_goals
 
 The learning_goals collection stores individual learning goals associated with a skill. Each learning goal contains:
 
-skill_id – Identifies the skill associated with the goal
-title – Name of the learning goal
-description – Description of what should be learned
-level – Beginner, Intermediate, or Advanced
-completed – Indicates whether the learning goal has been completed
+- **skill_id** – Identifies the skill associated with the goal
+- **title** – Name of the learning goal
+- **description** – Description of what should be learned
+- **level** – Beginner, Intermediate, or Advanced
+- **completed** – Indicates whether the learning goal has been completed
 
 The relationship between the collections is one-to-many, where one skill can have multiple learning goals. When a skill is deleted through the API, its associated learning goals are also deleted.
 
