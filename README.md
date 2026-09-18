@@ -69,4 +69,11 @@ Python Client Database: https://docs.cloud.google.com/python/docs/reference/fire
 
 Python Backend API: https://www.youtube.com/watch?v=gz0NWqTVo60 
 
-More Helpful resources: https://www.youtube.com/watch?v=yylnC3dr_no&t=394s  
+More Helpful resources: https://www.youtube.com/watch?v=yylnC3dr_no&t=394s 
+
+# Future Work
+- **Add a user interface so students can interact with their skills and learning goals without directly using the API.**
+- **Add user authentication so each student can manage their own skills and learning goals securely.**
+- **Add progress tracking and summaries to help users see their learning progress over time.**
+- **Improve the API documentation and add more detailed examples where useful.**
+- **Deploy the Flask API so the application can be accessed outside the local development environment.**
