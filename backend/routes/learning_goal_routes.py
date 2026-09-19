@@ -1,3 +1,5 @@
+# This code defines a set of Flask routes for managing learning goals in a web application. It includes endpoints for retrieving all learning goals, getting a specific learning goal by ID, creating new learning goals, updating existing ones, and deleting them. The routes interact with the backend services to perform the necessary operations and return appropriate HTTP responses based on the success or failure of each action.
+
 from flask import Blueprint, jsonify, request
 from backend.validation.learning_goal_validation import validate_learning_goal
 from backend.services.learning_goal_service import (

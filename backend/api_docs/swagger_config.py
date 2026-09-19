@@ -1,3 +1,5 @@
+# This code sets up the Swagger configuration for the TechVault Skill Tracker API. The `initialize_swagger` function initializes Swagger with the provided template for use in a Flask application.
+
 from flasgger import Swagger
 
 
@@ -357,12 +359,12 @@ swagger_template = {
                         "description": (
                             "Learning goals retrieved successfully."
                         ),
-                        "schema": {
-                            "type": "array",
-                            "items": {
-                                "$ref": "#/definitions/LearningGoal"
-                            }
-                        }
+                        # "schema": {
+                        #     "type": "array",
+                        #     "items": {
+                        #         "$ref": "#/definitions/LearningGoal"
+                        #     }
+                        # }
                     }
                 }
             },
@@ -427,9 +429,9 @@ swagger_template = {
                         "description": (
                             "Learning goal retrieved successfully."
                         ),
-                        "schema": {
-                            "$ref": "#/definitions/LearningGoal"
-                        }
+                        # "schema": {
+                        #     "$ref": "#/definitions/LearningGoal"
+                        # }
                     },
                     "404": {
                         "description": "Learning goal not found."

@@ -6,7 +6,6 @@ ALLOWED_LEVELS = [
   "Advanced"
 ]
 
-
 def validate_learning_goal(goal_data, is_update=False):
   if not goal_data:
     return "Invalid input data"

@@ -1,3 +1,5 @@
+# Flask application setup for the TechVault Skill Tracker API. It imports necessary modules, registers blueprints for skill and learning goal routes, initializes Swagger for API documentation, and defines a simple route to check if the API is running.
+
 from flask import Flask, jsonify
 from flasgger import Swagger
 from backend.routes.skill_routes import skill_routes

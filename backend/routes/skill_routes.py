@@ -1,3 +1,5 @@
+# This code defines a set of Flask routes for managing skills in a web application. It includes endpoints for retrieving all skills, getting a specific skill by ID, creating new skills, updating existing ones, and deleting them. The routes interact with the backend services to perform the necessary operations and return appropriate HTTP responses based on the success or failure of each action.
+
 from flask import Blueprint, jsonify, request
 from backend.validation.skill_validation import validate_skill
 from backend.services.skill_service import (

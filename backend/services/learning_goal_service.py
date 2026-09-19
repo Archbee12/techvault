@@ -1,3 +1,5 @@
+# This code provides a set of functions to manage learning goals in a Firestore database. It includes functions to create, retrieve, update, and delete learning goals. Each function interacts with the Firestore database using the Firebase Admin SDK and handles exceptions that may occur during database operations.
+
 from backend.config.firestore_connection import db
 
 # Create a new learning goal

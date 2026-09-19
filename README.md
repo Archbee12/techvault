@@ -7,8 +7,7 @@ The software is built with Python and Flask and integrates with Firebase Firesto
 The purpose of writing this software was to gain practical experience working with a cloud database while improving my ability to design and build backend applications. I also wanted to apply a continuous-learning approach by breaking a larger software-development goal into smaller features, such as establishing the database connection, creating CRUD operations, validating data, connecting related collections, and documenting the API.
 
 Youtube Video: 
-
-[Software Demo Video](http://youtube.link.goes.here)
+https://www.youtube.com/watch?v=zbgIeswAt0U 
 
 # Cloud Database
 

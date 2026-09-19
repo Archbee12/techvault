@@ -1,3 +1,5 @@
+# This code defines a list of learning goals for various programming skills to be seeded into firestore database.
+
 from backend.config.firestore_connection import db
 
 

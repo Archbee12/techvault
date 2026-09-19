@@ -1,3 +1,5 @@
+# This code defines a list of skills to be seeded into the Firestore database.
+
 from backend.config.firestore_connection import db
 
 

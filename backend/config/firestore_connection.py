@@ -1,3 +1,5 @@
+# This code establishes a connection to a Firestore database using the Firebase Admin SDK. It loads the service account key from a JSON file, initializes the Firebase app, and creates a Firestore client for database operations.
+
 import firebase_admin
 from firebase_admin import credentials, firestore
 
