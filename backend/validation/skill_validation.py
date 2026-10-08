@@ -19,7 +19,6 @@ ALLOWED_LEVELS = [
   "Advanced"
 ]
 
-
 def validate_skill(skill_data, is_update=False):
   if not skill_data:
     return "Invalid input data"
