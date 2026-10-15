@@ -17,3 +17,12 @@ node_modules/
 
 # IDE
 .vscode/
+# Android Studio and Gradle
+.idea/
+.gradle/
+**/build/
+local.properties
+**/local.properties
+.externalNativeBuild/
+.cxx/
+*.iml
